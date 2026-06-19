@@ -1,0 +1,6 @@
+FROM owncloud/server:latest
+
+ENV OWNCLOUD_ADMIN_USERNAME=admin \
+    OWNCLOUD_ADMIN_PASSWORD=Admin123456
+
+EXPOSE 8080

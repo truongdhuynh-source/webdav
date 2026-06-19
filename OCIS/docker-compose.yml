@@ -1,11 +1,11 @@
 services:
   ocis:
-    image: owncloud/ocis:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dockerimagewebdav-ocis:latest
 
     restart: unless-stopped
-
-    environment:
-      OCIS_INSECURE: "true"
 
     ports:
       - "9200:9200"

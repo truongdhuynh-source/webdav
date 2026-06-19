@@ -1,0 +1,8 @@
+services:
+  owncloud:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dockerimagewebdav-owncloud:latest
+    ports:
+      - "8083:8080"

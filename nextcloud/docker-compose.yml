@@ -1,0 +1,9 @@
+services:
+  nextcloud:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dockerimagewebdav-nextcloud:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+services:
+  webdav:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dockerimagewebdav-apache-webdav:latest
+    ports:
+      - "8082:80"

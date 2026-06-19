@@ -1,0 +1,9 @@
+name: dockerimagewebdav
+
+include:
+  - ./WsgiDAV/docker-compose.yml
+  - ./owncloud-ocis/docker-compose.yml
+  - ./OCIS/docker-compose.yml
+  - ./apache-webdav/docker-compose.yml
+  - ./nextcloud/docker-compose.yml
+  - ./nginx-webdav/docker-compose.yml
