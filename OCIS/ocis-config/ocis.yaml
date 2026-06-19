@@ -1,0 +1,172 @@
+token_manager:
+  jwt_secret: Dfhj%1WHOoiS+7dF^Mq41YG5#g.1bipy
+machine_auth_api_key: 5ksdtEinf8mMXzkhESGsot5arheGxG*=
+system_user_api_key: $H+zE-PVZKM^JDyrTG%rI&EUwBF!bI$G
+transfer_secret: stkTLKutKMfZSyN5T9ChJ6KnRWBU0gzX
+system_user_id: 3c3fbd61-6cde-4976-a322-b68e958fc6b7
+admin_user_id: ec681589-8ec4-4063-a220-cc857e4d76a2
+graph:
+  application:
+    id: 4a653df4-76ea-4dfa-b265-6dc5f6d30e17
+  events:
+    tls_insecure: true
+  spaces:
+    insecure: false
+  identity:
+    ldap:
+      bind_password: 4TIeM8lIUm$F^mCDRRCe2qp==NadhDij
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+idp:
+  ldap:
+    bind_password: t5Mnz&IWuG0N5BoNnW4.HXCKE=mgdQyB
+  clients:
+  - id: web
+    name: ownCloud Web app
+    trusted: true
+    secret: ""
+    redirect_uris:
+    - https://webdav-uc0u.onrender.com/
+    - https://webdav-uc0u.onrender.com/oidc-callback.html
+    - https://webdav-uc0u.onrender.com/oidc-silent-redirect.html
+    origins:
+    - https://webdav-uc0u.onrender.com
+    application_type: ""
+  - id: vinacad-portal
+    name: VinaCAD Portal
+    trusted: false
+    secret: ""
+    redirect_uris:
+    - http://133.167.66.141:4000/storage-cloud?storage_provider=ocis
+    origins:
+    - http://133.167.66.141:4000
+    application_type: native
+  - id: xdXOt13JKxym1B1QcEncf2XDkLAexMBFwiT9j6EfhhHFJhs2KM9jbjTmf8JBXE69
+    name: ownCloud desktop app
+    trusted: false
+    secret: UBntmLjC2yYCeHwsyj73Uwo9TAaecAetRwMw0xYcvNL9yRdLSUi0hUAHfvCHFeFh
+    redirect_uris:
+    - https://webdav-uc0u.onrender.com
+    origins: []
+    application_type: native
+  - id: e4rAsNUSIUs0lF4nbv9FmCeUkTlV9GdgTLDH1b5uie7syb90SzEVrbN7HIpmWJeD
+    name: ownCloud Android app
+    trusted: false
+    secret: dInFYGV33xKzhbRmpqQltYNdfLdJIfJ9L5ISoKhNoT9qZftpdWSP71VrpGR9pmoD
+    redirect_uris:
+    - oc://android.owncloud.com
+    origins: []
+    application_type: native
+  - id: mxd5OQDk6es5LzOzRvidJNfXLUZS2oN3oUFeXPP8LpPrhx3UroJFduGEYIBOxkY1
+    name: ownCloud iOS app
+    trusted: false
+    secret: KFeFWWEZO9TkisIQzR3fo7hfiMXlOpaqP8CFuTbSHzV1TUuGECglPxpiVKJfOXIx
+    redirect_uris:
+    - oc://ios.owncloud.com
+    origins: []
+    application_type: native
+idm:
+  service_user_passwords:
+    admin_password: kQk3B#-5SJqB^pxEnICX^SiDysSZ#66P
+    idm_password: 4TIeM8lIUm$F^mCDRRCe2qp==NadhDij
+    reva_password: 6Qzu@04!y4FQ2en*w$.CB#qqCalyD+Y5
+    idp_password: t5Mnz&IWuG0N5BoNnW4.HXCKE=mgdQyB
+collaboration:
+  wopi:
+    secret: vy71yYM0*IaE5ZMmUVprHr=tPMpCRVPp
+  app:
+    insecure: false
+proxy:
+  oidc:
+    insecure: true
+  insecure_backends: false
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+frontend:
+  app_handler:
+    insecure: false
+  archiver:
+    insecure: false
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+auth_basic:
+  auth_providers:
+    ldap:
+      bind_password: 6Qzu@04!y4FQ2en*w$.CB#qqCalyD+Y5
+auth_bearer:
+  auth_providers:
+    oidc:
+      insecure: true
+users:
+  drivers:
+    ldap:
+      bind_password: 6Qzu@04!y4FQ2en*w$.CB#qqCalyD+Y5
+groups:
+  drivers:
+    ldap:
+      bind_password: 6Qzu@04!y4FQ2en*w$.CB#qqCalyD+Y5
+ocdav:
+  insecure: true
+ocm:
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+thumbnails:
+  thumbnail:
+    transfer_secret: 406I6skwqg5KN0r9PyJGg6EJ9CNukh1D
+    webdav_allow_insecure: false
+    cs3_allow_insecure: false
+search:
+  events:
+    tls_insecure: true
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+audit:
+  events:
+    tls_insecure: true
+settings:
+  service_account_ids:
+  - 749db308-3817-49ea-a4a9-5be2f748ccc9
+sharing:
+  events:
+    tls_insecure: true
+storage_users:
+  events:
+    tls_insecure: true
+  mount_id: 2864cd42-fe97-43fe-8857-81400ac811e5
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+notifications:
+  notifications:
+    events:
+      tls_insecure: true
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+nats:
+  nats:
+    tls_skip_verify_client_cert: false
+gateway:
+  storage_registry:
+    storage_users_mount_id: 2864cd42-fe97-43fe-8857-81400ac811e5
+userlog:
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+auth_service:
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+clientlog:
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'
+activitylog:
+  service_account:
+    service_account_id: 749db308-3817-49ea-a4a9-5be2f748ccc9
+    service_account_secret: '!o#AirUU7G3fFy%00o*.a2zUZp7V$*r-'

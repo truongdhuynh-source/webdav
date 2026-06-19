@@ -1,0 +1,15 @@
+services:
+  ocis:
+    image: owncloud/ocis:latest
+
+    restart: unless-stopped
+
+    environment:
+      OCIS_INSECURE: "true"
+
+    ports:
+      - "9200:9200"
+
+    volumes:
+      - ./ocis-config:/etc/ocis
+      - ./ocis-data:/var/lib/ocis
